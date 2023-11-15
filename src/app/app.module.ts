@@ -1,18 +1,20 @@
-import { NgModule } from '@angular/core';
+// app.module.ts
 import { BrowserModule } from '@angular/platform-browser';
-
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
+import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http'; // Import HttpClientModule
 
 @NgModule({
   declarations: [
-    AppComponent
+    // Other components and directives go here
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    HttpClientModule, // Add HttpClientModule to the imports array
+    // Other modules go here
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [
+    // Specify the component that will serve as the root component
+    // For example, if your root component is named 'AppComponent', include it here
+  ],
 })
-export class AppModule { }
+export class AppModule {}

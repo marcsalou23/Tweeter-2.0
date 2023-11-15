@@ -1,0 +1,16 @@
+/* tweet.component.css */
+.tweet-container {
+    max-width: 600px;
+    margin: auto;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+.tweet-input {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+/* Add more styles as needed */
