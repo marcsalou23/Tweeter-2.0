@@ -1,1 +1,9 @@
-<p>timeline works!</p>
+<!-- timeline.component.html -->
+<div>
+  <!-- Your component's HTML content goes here -->
+  <ul>
+    <li *ngFor="let tweet of timeline">
+      {{ tweet.content }}
+    </li>
+  </ul>
+</div>

@@ -8,7 +8,22 @@ import { AuthService } from '../auth.service';
   styleUrls: ['./login.component.css'],
 })
 export class LoginComponent {
+  username: string = '';
+  password: string = '';
+
   constructor(private authService: AuthService) {}
 
-  // Implement login logic using authService.login()
+  login(): void {
+    // Example: Perform user authentication
+    this.authService.login(this.username, this.password).subscribe(
+      (response) => {
+        console.log('Login successful:', response);
+        // Additional logic if needed
+      },
+      (error) => {
+        console.error('Error during login:', error);
+        // Handle error
+      }
+    );
+  }
 }
